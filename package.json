@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jeonghoheo/LearnRestApi/issues"
   },
-  "homepage": "https://github.com/jeonghoheo/LearnRestApi#readme"
+  "homepage": "https://github.com/jeonghoheo/LearnRestApi#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
