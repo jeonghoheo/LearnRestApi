@@ -1,0 +1,19 @@
+{
+  "name": "learnrestapi",
+  "version": "1.0.0",
+  "description": "Learn Rest Api with Express, Pug using PlasholderJSON",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeonghoheo/LearnRestApi.git"
+  },
+  "author": "Jeongho Heo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeonghoheo/LearnRestApi/issues"
+  },
+  "homepage": "https://github.com/jeonghoheo/LearnRestApi#readme"
+}
