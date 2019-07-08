@@ -2,8 +2,13 @@ import express from "express";
 import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
+import path from "path";
 
 const app = express();
+
+// Setting views enviroments
+app.set("views", path.join(__dirname, "/views"));
+app.set("view engine", "pug");
 
 // helmet protects our App
 app.use(helmet());
@@ -14,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.send("Hi");
+  res.render("home");
 });
 
 export default app;
