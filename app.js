@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.render("home");
+  res.render("home", { title: "Home" });
 });
 
 export default app;

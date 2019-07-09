@@ -9,3 +9,4 @@
 - [x] Install nodemon for restarting server automatically
 - [x] Install some stuff for app (morgan, helmet, bodyParser)
 - [x] Show home page using pug
+- [x] Use extends and includes in pug
