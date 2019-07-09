@@ -3,6 +3,7 @@ import morgan from "morgan";
 import helmet from "helmet";
 import bodyParser from "body-parser";
 import path from "path";
+import middlewares from "./middlewares";
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // using morgan for logs
 app.use(morgan("dev"));
+app.use(middlewares);
 
 app.get("/", (req, res) => {
   res.render("home", { title: "Home" });
