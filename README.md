@@ -11,3 +11,4 @@
 - [x] Show home page using pug
 - [x] Use extends and includes in pug
 - [x] Using middleware with res.locals for using variables anywhere
+- [x] Use Router to routing

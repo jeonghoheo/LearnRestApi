@@ -4,6 +4,7 @@ import helmet from "helmet";
 import bodyParser from "body-parser";
 import path from "path";
 import middlewares from "./middlewares";
+import router from "./router";
 
 const app = express();
 
@@ -20,8 +21,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan("dev"));
 app.use(middlewares);
 
-app.get("/", (req, res) => {
-  res.render("home", { title: "Home" });
-});
+app.get("/", router);
 
 export default app;
