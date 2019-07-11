@@ -12,3 +12,4 @@
 - [x] Use extends and includes in pug
 - [x] Using middleware with res.locals for using variables anywhere
 - [x] Use Router to routing
+- [x] Use get using axios
