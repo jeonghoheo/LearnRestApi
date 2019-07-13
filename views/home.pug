@@ -3,3 +3,6 @@ extends layouts/main
 block content
     h1=title
         h2=name
+    form(action="/", method="POST")
+        input(type="text", name="post")
+        button(type="submit" onClick={prevent}) 제출하기

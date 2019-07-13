@@ -16,11 +16,11 @@ app.set("view engine", "pug");
 app.use(helmet());
 // using body parser for post data
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: false }));
 // using morgan for logs
 app.use(morgan("dev"));
 app.use(middlewares);
 
-app.get("/", router);
+app.use("/", router);
 
 export default app;

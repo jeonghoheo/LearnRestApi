@@ -13,3 +13,4 @@
 - [x] Using middleware with res.locals for using variables anywhere
 - [x] Use Router to routing
 - [x] Use get using axios
+- [x] Use Post using request body
